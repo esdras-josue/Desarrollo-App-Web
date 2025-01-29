@@ -1,0 +1,97 @@
+
+/* Global styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f0f2f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* App container */
+.app {
+  text-align: center;
+  padding: 30px;
+  width: 100%;
+  max-width: 1200px;
+}
+
+/* Header */
+h1 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 40px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+/* Card container */
+.card-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+/* Individual person card */
+.person-card {
+  background-color: #fff;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 280px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.person-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* List styling inside cards */
+.person-card ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.person-card li {
+  font-size: 1.1rem;
+  color: #555;
+  margin: 10px 0;
+}
+
+.person-card li strong {
+  color: #333;
+  font-weight: bold;
+}
+
+/* Adding some spacing between elements */
+.person-card li span {
+  color: #777;
+  font-weight: normal;
+}
+
+.card-container .person-card {
+  transition: all 0.3s ease;
+}
+
+.person-card:hover {
+  transform: translateY(-10px);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .card-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
